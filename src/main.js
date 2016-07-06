@@ -3,7 +3,7 @@ function resetHeights() {
   var nav_height = $('nav').height();
   $('.section-home').css('margin-top', nav_height);
   $('.nav-target').css('transform', 'translateY(-' + nav_height + 'px)');
-  $('section').height(window_height - nav_height);
+  $('section').css('min-height', (window_height - nav_height).toString() + 'px');
 }
 
 resetHeights();
