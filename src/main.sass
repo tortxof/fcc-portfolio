@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato)
 
+// colors
+
+$cBrown: #554236
+$cOrange: #F77825
+$cYellow: #D3CE3D
+$cGold: #F1EFA5
+$cTurq: #60B99A
+
+
 // typography
 
 html
@@ -8,7 +17,11 @@ html
 body
   font-family: 'Lato', sans-serif
   line-height: 1.5
-  color: #544
+  color: $cBrown
+
+a
+  color: $cOrange
+  text-decoration: none
 
 h1
   font-size: 2.441em
@@ -35,8 +48,15 @@ nav
   top: 0
   left: 0
   right: 0
-  background-color: pink
+  background-color: $cGold
   overflow: hidden
+  a
+    display: block
+    color: white
+    text-decoration: none
+    padding: 0.2ch 0.5ch
+    margin: 0 1ch
+    background-color: $cTurq
   ul
     text-align: right
     list-style: none
@@ -44,12 +64,13 @@ nav
     margin: 0.5ch 0
   li
     display: inline-block
-    background-color: blue
-    margin: 0 1ch
-    padding: 0.5ch
 
 section
   padding: 0 2em
+
+.container
+  margin: 0 auto
+  max-width: 60ch
 
 // section styles
 
@@ -60,6 +81,8 @@ section.section-home
     font-weight: 400
   .networks
     ul
+      padding: 0
       list-style: none
-    li
-      display: inline-block
+      display: flex
+      flex-direction: column
+      align-items: center
