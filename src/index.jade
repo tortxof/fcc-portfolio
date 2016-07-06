@@ -53,6 +53,22 @@ section.section-portfolio: .container
     View project on #[a(href='http://codepen.io/tortxof/full/BjPWba/') CodePen].
 
   h3 rc-club-members
+
+  p.
+
+    #[img.left(src='https://s3.amazonaws.com/djones-imghost/iT0BeIDm/rc-club-members-screenshot.jpg')]
+    A Flask application for managing the membership roster of an RC club. The
+    admin interface lists members based on membership expiry date (current,
+    expired, previous year). Provides JSON import and export. Search using
+    sqlite3 full text search (FTS4). Provides mass email using the Mailgun API
+    for sending newsletters, announcements, etc. Read-only passwordless login is
+    provided to members through a signed token sent in newsletters, or emailed
+    to an individual member via the login page. Provides CSV and XLSX export of
+    roster. Uses the Flask framework and peewee ORM. Deployed with Docker behind
+    an nginx uwsgi proxy.
+    Github repository at
+    #[a(href='https://github.com/tortxof/rc-club-members') tortxof/rc-club-members].
+
   h3 flask-signup
 
   p.
