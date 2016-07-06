@@ -16,6 +16,8 @@ $shadow: 0 1px 4px -1px black
 
 html
   font-size: 24px
+  @media (max-width: 640px)
+    font-size: 18px
 
 body
   font-family: 'Lato', sans-serif
@@ -76,11 +78,17 @@ nav
     padding: 0.2ch 0.5ch
     margin: 0 1ch
     background-color: $cTurq
+    @media (max-width: 640px)
+      margin: 0 .5ch
+      padding: .2ch
   ul
     text-align: right
     list-style: none
     padding: 0 1em 0 0
     margin: 0.5ch 0
+    @media (max-width: 640px)
+      padding: 0
+      text-align: center
   li
     display: inline-block
 
@@ -142,6 +150,12 @@ section.section-about
 section.section-portfolio
   h3
     margin-left: 1em
+  @media (max-width: 640px)
+    img
+      width: 50%
+    h3
+      margin-left: 0
+      text-align: center
 
 section.section-contact
   position: relative
