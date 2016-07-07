@@ -12,4 +12,5 @@ html
 
     script(type="application/javascript", src="//code.jquery.com/jquery-2.2.0.min.js")
     script(type="application/javascript", src="main.js")
-    include ga.html
+    if process.env.NODE_ENV == 'production'
+      include ga.html

@@ -1,1 +1,5 @@
-webdev_run harp compile src dist
+docker run -ti --rm -u $(id -u):$(id -g) \
+  -e HOME -v $HOME:$HOME \
+  -e NODE_ENV=production \
+  -v $(pwd):/host \
+  tortxof/webdev harp compile src dist
