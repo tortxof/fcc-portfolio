@@ -168,12 +168,43 @@ section.section-contact
   background-position: center bottom
   background-size: cover
   position: relative
-  .contact-email
+  .contact-container
     position: absolute
     top: 0
     bottom: 0
     left: 0
     right: 0
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
+
+  form
+    width: 20em
+    @media (max-width: $small_bp)
+      width: 80%
+
+  input, textarea, button
+    font-family: 'Lato', sans-serif
+    font-size: 24px
+    display: block
+    box-sizing: border-box
+    width: 100%
+    background-color: $cGold
+    color: $cBrown
+    border: 2px solid $cTurq
+    border-radius: .3em
+    padding: .3em
+    margin: .5em 0
+    @media (max-width: $small_bp)
+      font-size: 18px
+
+  button
+    width: auto
+    border: 0
+    background-color: $cTurq
+    color: white
+    box-shadow: $shadow
+
+  textarea
+    resize: none
