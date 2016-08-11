@@ -8,8 +8,9 @@ programming in JavaScript. I started using Git in 2012, and I believe this is an
 essential tool for developers. After starting FreeCodeCamp's Front End
 Development Certification, I began attending weekly meetups for FreeCodeCamp in
 Greenville, SC. At these meetups I have collaborated on coding challenges with
-fellow FCC students. My experience with Linux server administration goes back to
-the mid 2000s. I have experience deploying LAMP stack software such as phpBB and
-Wordpress. More recently, I've employed Docker for deployment of my own Python
-back-end projects. I've been employed for more than 13 years as a computer
-technician repairing Windows desktop and laptop computers.
+fellow FCC students. I completed FreeCodeCamp's Front End Development
+Certification in August 2016. My experience with Linux server administration
+goes back to the mid 2000s. I have experience deploying LAMP stack software such
+as phpBB and Wordpress. More recently, I've employed Docker for deployment of my
+own Python back-end projects. I've been employed for more than 13 years as a
+computer technician repairing Windows desktop and laptop computers.
