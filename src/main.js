@@ -24,11 +24,9 @@ $('#submit').click(function(event) {
 
   xhr.addEventListener('error', function() {
     console.log('error posting form');
-    showContactModal();
-    setTimeout(hideContactModal, 2000);
   });
 
-  xhr.open('POST', $('#contact-form')[0].action);
+  xhr.open('POST', $('#contact-form')[0].action + '?res_type=json');
   xhr.send(formData);
 });
 
