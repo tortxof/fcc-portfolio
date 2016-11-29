@@ -211,14 +211,7 @@ section.section-contact
 
 #contact-success-modal
   display: none
-  p
-    padding: 1em
-    background-color: $cTurq
-    color: white
-    border-radius: 1em
-
-#contact-success-modal.show
-  display: flex
+  opacity: 0
   position: fixed
   top: 0
   bottom: 0
@@ -227,3 +220,32 @@ section.section-contact
   background-color: rgba($cBrown, 0.5)
   align-items: center
   justify-content: center
+  p
+    padding: 1em
+    background-color: $cTurq
+    color: white
+    border-radius: 1em
+
+#contact-success-modal.show
+  display: flex
+  animation: 2s linear 0s fade
+  p
+    animation: 2s linear 0s fly-in-out
+
+@keyframes fade
+  0%, 100%
+    opacity: 0
+  15%, 85%
+    opacity: 1
+
+@keyframes fly-in-out
+  0%
+    transform: scale(1.2)
+    animation-timing-function: ease-out
+  15%
+    transform: scale(1)
+  85%
+    transform: translateX(0px)
+    animation-timing-function: ease-in
+  100%
+    transform: translateX(300px)
