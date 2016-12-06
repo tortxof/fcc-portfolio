@@ -26,7 +26,7 @@ $('#submit').click(function(event) {
     console.log('error posting form');
   });
 
-  xhr.open('POST', $('#contact-form')[0].action + '?res_type=json');
+  xhr.open('POST', $('#contact-form')[0].action + '&res_type=json');
   xhr.send(formData);
 });
 
