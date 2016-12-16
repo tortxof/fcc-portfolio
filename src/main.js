@@ -1,39 +1,38 @@
 function resetHeights() {
-  var window_height = $(window).height();
-  var nav_height = $('nav').height();
-  $('.section-home').css('margin-top', nav_height);
-  $('.nav-target').css('transform', 'translateY(-' + nav_height + 'px)');
-  $('section').css('min-height', (window_height - nav_height).toString() + 'px');
+  var window_height = window.innerHeight;
+  var nav_height = document.querySelector('nav').clientHeight;
+  document.querySelector('.section-home').style.marginTop = nav_height.toString() + 'px';
+  document.querySelectorAll('.nav-target').forEach(function(e) {
+    e.style.transform = 'translateY(-' + nav_height + 'px)';
+  });
+  document.querySelectorAll('section').forEach(function(e) {
+    e.style.minHeight = (window_height - nav_height).toString() + 'px';
+  });
 }
 
 resetHeights();
 
-$(window).resize(resetHeights);
+window.addEventListener('resize', resetHeights);
 
-$('#submit').click(function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();
 
   var xhr = new XMLHttpRequest();
-  var formData = new FormData($('#contact-form')[0]);
+  var formData = new FormData(document.getElementById('contact-form'));
 
   xhr.addEventListener('load', function() {
-    console.log('form posted successfully');
     showContactModal();
-    setTimeout(hideContactModal, 2000);
   });
 
-  xhr.addEventListener('error', function() {
-    console.log('error posting form');
-  });
-
-  xhr.open('POST', $('#contact-form')[0].action + '&res_type=json');
+  xhr.open('POST', document.getElementById('contact-form').action + '&res_type=json');
   xhr.send(formData);
 });
 
 function showContactModal() {
-  $('#contact-success-modal').addClass('show');
+  var modal_elem = document.getElementById('contact-success-modal');
+  modal_elem.classList.add('show');
 }
 
-function hideContactModal() {
-  $('#contact-success-modal').removeClass('show');
-}
+document.getElementById('contact-success-modal').addEventListener('animationend', function() {
+  this.classList.remove('show');
+});
