@@ -31,8 +31,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 function showContactModal() {
-  var modal_elem = document.getElementById('contact-success-modal');
-  modal_elem.classList.add('show');
+  document.getElementById('contact-success-modal').classList.add('show');
 }
 
 document.getElementById('contact-success-modal').addEventListener('animationend', function() {
