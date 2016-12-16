@@ -2,12 +2,14 @@ function resetHeights() {
   var window_height = window.innerHeight;
   var nav_height = document.querySelector('nav').clientHeight;
   document.querySelector('.section-home').style.marginTop = nav_height.toString() + 'px';
-  document.querySelectorAll('.nav-target').forEach(function(e) {
-    e.style.transform = 'translateY(-' + nav_height + 'px)';
-  });
-  document.querySelectorAll('section').forEach(function(e) {
-    e.style.minHeight = (window_height - nav_height).toString() + 'px';
-  });
+  var nav_targets = document.querySelectorAll('.nav-target');
+  for (var i = 0; i < nav_targets.length; i++) {
+    nav_targets[i].style.transform = 'translateY(-' + nav_height + 'px)';
+  }
+  var sections = document.querySelectorAll('section');
+  for (i = 0; i < sections.length; i++) {
+    sections[i].style.minHeight = (window_height - nav_height).toString() + 'px';
+  }
 }
 
 resetHeights();
