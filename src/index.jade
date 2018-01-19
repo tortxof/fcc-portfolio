@@ -132,8 +132,8 @@ section.section-portfolio: .container
     for sending newsletters, announcements, etc. Read-only passwordless login is
     provided to members through a signed token sent in newsletters, or emailed
     to an individual member via the login page. Provides CSV and XLSX export of
-    roster. Uses the Flask framework and peewee ORM. Deployed with Docker behind
-    an nginx uwsgi proxy.
+    roster. Uses the Flask framework and peewee ORM connecting to PostgreSQL.
+    Deployed to AWS Lambda using #[a(href='https://github.com/Miserlou/Zappa') Zappa].
     GitHub repository at
     #[a(href='https://github.com/tortxof/rc-club-members') tortxof/rc-club-members].
 
@@ -147,7 +147,8 @@ section.section-portfolio: .container
     app, then uses the form key in their HTML forms. The user can then use their
     secret key to retrieve submitted form data. The app provides both web and
     JSON interfaces. Uses the Flask framework. Deployed to AWS Lambda using
-    Zappa. Uses AWS DynamoDB for data persistence.
+    #[a(href='https://github.com/Miserlou/Zappa') Zappa]. Uses AWS DynamoDB for
+    data persistence.
     GitHub repo at #[a(href='https://github.com/tortxof/flask-signup') tortxof/flask-signup].
     Live at #[a(href='https://signup.djones.co/') signup.djones.co].
 
