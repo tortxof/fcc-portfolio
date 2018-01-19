@@ -146,8 +146,8 @@ section.section-portfolio: .container
     back-end. The user retrieves a key pair (secret key and form key) from the
     app, then uses the form key in their HTML forms. The user can then use their
     secret key to retrieve submitted form data. The app provides both web and
-    JSON interfaces. Uses the Flask framework and peewee ORM. Deployed with
-    Docker behind an nginx reverse proxy.
+    JSON interfaces. Uses the Flask framework. Deployed to AWS Lambda using
+    Zappa. Uses AWS DynamoDB for data persistence.
     GitHub repo at #[a(href='https://github.com/tortxof/flask-signup') tortxof/flask-signup].
     Live at #[a(href='https://signup.djones.co/') signup.djones.co].
 
