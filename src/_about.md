@@ -6,11 +6,15 @@ programming was with the CherryPy framework. Since then I have used Flask and
 Django. In 2015 and early 2016 I spent a lot of time learning about front-end
 programming in JavaScript. I started using Git in 2012, and I believe this is an
 essential tool for developers. After starting freeCodeCamp's Front End
-Development Certification, I began attending weekly meetups for freeCodeCamp in
-Greenville, SC. At these meetups I have collaborated on coding challenges with
+Development Certification, I began attending weekly meet-ups for freeCodeCamp in
+Greenville, SC. At these meet-ups I have collaborated on coding challenges with
 fellow FCC students. I completed freeCodeCamp's Front End Development
-Certification in August 2016. My experience with Linux server administration
-goes back to the mid 2000s. I have experience deploying LAMP stack software such
-as phpBB and Wordpress. More recently, I've employed Docker for deployment of my
-own Python back-end projects. I've been employed for more than 13 years as a
-computer technician repairing Windows desktop and laptop computers.
+Certification in August 2016. I currently host and mentor at the weekly
+freeCodeCamp meet-ups in Greenville. Since the fall of 2017, I have been a
+mentor for the [SC Codes](https://sccodes.org/) program. My experience with
+Linux server administration goes back to the mid 2000s. I have experience
+deploying LAMP stack software such as phpBB and Wordpress. I've employed Docker
+for deployment of my own Python back-end projects. Most recently I've migrated
+all of my personal projects to AWS Lambda using [Zappa](https://www.zappa.io/).
+I've been employed for more than 13 years as a computer technician repairing
+Windows desktop and laptop computers.
